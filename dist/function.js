@@ -14,7 +14,7 @@ const stringTotal = addString(2, 5);
 // arrow function 
 const addArrow = (num1, num2) => num1 + num2;
 const arroeTotal = addArrow(2, 8);
-console.log(arroeTotal);
+// console.log(arroeTotal)
 // method function 
 const students = {
     name: 'Muhammad SA',
@@ -24,4 +24,13 @@ const students = {
     }
 };
 const ageSentence = students.addAge(12);
-console.log(ageSentence);
+// console.log(ageSentence)
+const greetFriends = (...friends) => {
+    friends.forEach((friend) => {
+        // console.log(`Hi ${friend}`)
+    });
+};
+greetFriends('abul', 'tabul', 'sabul', 'makbul');
+const usFriends = ['Khab', 'Mahbii', 'Cabi'];
+const [best, mab] = usFriends[2];
+console.log(mab);

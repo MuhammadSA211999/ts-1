@@ -15,7 +15,7 @@ const stringTotal: string = addString(2, 5)
 // arrow function 
 const addArrow = (num1: number, num2: number): number => num1 + num2
 const arroeTotal: number = addArrow(2, 8)
-console.log(arroeTotal)
+// console.log(arroeTotal)
 
 // method function 
 const students: {
@@ -31,4 +31,16 @@ const students: {
 
 }
 const ageSentence: string = students.addAge(12)
-console.log(ageSentence)
+// console.log(ageSentence)
+
+const greetFriends = (...friends: string[]): void => {
+    friends.forEach((friend: string) => {
+        // console.log(`Hi ${friend}`)
+    })
+}
+
+greetFriends('abul', 'tabul', 'sabul', 'makbul')
+
+const usFriends = ['Khab', 'Mahbii', 'Cabi']
+const [best, mab] = usFriends[2]
+console.log(mab)
